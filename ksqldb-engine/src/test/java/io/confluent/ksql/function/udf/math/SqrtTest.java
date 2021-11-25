@@ -52,8 +52,8 @@ public class SqrtTest {
 
   @Test
   public void shouldHandlePositive() {
-    assertThat(udf.sqrt(4), is(closeTo(2.0, 5E-13)));
-    assertThat(udf.sqrt(3), is(closeTo(1.7320508075688772, 5E-13)));
-    assertThat(udf.sqrt(1.0), is(closeTo(1.0, 5E-13)));
+    assertThat(udf.sqrt(4), is(closeTo(2.0, 1E-15)));
+    assertThat(udf.sqrt(3), is(closeTo(1.7320508075688772, 1E-15)));
+    assertThat(udf.sqrt(1.0), is(closeTo(1.0, 1E-15)));
   }
 }
